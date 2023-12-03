@@ -1,0 +1,344 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.firstSection {
+  width: 100%;
+  height: 100vh;
+  background: #28293E;
+}
+.firstSection .nav-bar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding-top: 1rem;
+}
+.firstSection .nav-bar .logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: 16%;
+  gap: 0.875rem;
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+.firstSection .nav-bar .logo span {
+  font-family: "Epilogue", sans-serif;
+  color: #fff;
+  font-size: 1em;
+  font-style: normal;
+  font-weight: 700;
+}
+.firstSection .nav-bar nav {
+  max-width: 36%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.firstSection .nav-bar nav ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+.firstSection .nav-bar nav ul li {
+  list-style-type: none;
+  color: #fff;
+  font-family: "Epilogue", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.firstSection .nav-bar button {
+  color: #fff;
+  width: 138px;
+  height: 48px;
+  border-radius: 6px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  text-transform: uppercase;
+  cursor: pointer;
+  text-align: center;
+  font-family: "Epilogue", sans-serif;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+.firstSection .nav-bar button:hover {
+  background-color: rgb(36, 36, 53);
+  border: 1px solid #28293E;
+}
+.firstSection main {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.firstSection main .container-left {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 10%;
+}
+.firstSection main .container-left span:nth-of-type(1) {
+  color: #EF6D58;
+  font-size: 1rem;
+  font-family: "Epilogue", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+.firstSection main .container-left span:nth-of-type(2) {
+  color: #fff;
+  font-size: 4.5rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 80px;
+  letter-spacing: -2px;
+}
+.firstSection main .container-left button {
+  background-color: #EF6D58;
+  width: 154px;
+  height: 48px;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  font-size: 0.875rem;
+  font-family: "Epilogue", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.firstSection main .container-left button:hover {
+  background-color: #EF6D70;
+}
+.firstSection main .container-right img {
+  height: 80%;
+}
+
+.secondSection {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background-color: #FDF0E9;
+}
+.secondSection .title {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 1rem;
+  padding-top: 30px;
+}
+.secondSection .title span:nth-of-type(1) {
+  color: #EF6D58;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-family: "Epilogue", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1em;
+  letter-spacing: 3px;
+}
+.secondSection .title span:nth-of-type(2) {
+  color: #391400;
+  font-family: "Epilogue", sans-serif;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 3rem;
+  letter-spacing: -1px;
+}
+.secondSection .rightAndLeft {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+  padding-left: 6rem;
+}
+.secondSection .rightAndLeft .left {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 45%;
+  height: auto;
+  border: 1px solid #F3D1BF;
+  border-radius: 6px 0px 0px 6px;
+  padding: 3rem;
+  gap: 1rem;
+}
+.secondSection .rightAndLeft .left .svg {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.5rem;
+}
+.secondSection .rightAndLeft .left .svg svg:hover circle {
+  fill: #fff;
+}
+.secondSection .rightAndLeft .left .svg svg:hover path {
+  fill: #EF6C57;
+}
+.secondSection .rightAndLeft .left .svg span {
+  font-family: "Epilogue", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  color: #391400;
+}
+.secondSection .rightAndLeft .left span {
+  color: rgba(57, 20, 0, 0.64);
+  font-family: "Epilogue", sans-serif;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+.secondSection .rightAndLeft .left .svg1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.secondSection .rightAndLeft .left .svg1 span {
+  color: #391400;
+  font-family: "Epilogue", sans-serif;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+}
+.secondSection .rightAndLeft .left .svg1 svg:hover path {
+  fill: #fff;
+}
+.secondSection .rightAndLeft .left .svg1 svg:hover rect {
+  fill: #EF6C57;
+}
+.secondSection .rightAndLeft .right {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: auto;
+  border: 1px solid #F3D1BF;
+  border-radius: 6px 0px 0px 6px;
+  padding: 3rem;
+  gap: 1rem;
+}
+.secondSection .rightAndLeft .right .firstsvg {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.5rem;
+}
+.secondSection .rightAndLeft .right .firstsvg span {
+  font-family: "Epilogue", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  color: #391400;
+}
+.secondSection .rightAndLeft .right .firstsvg svg:hover circle {
+  fill: #fff;
+}
+.secondSection .rightAndLeft .right .firstsvg svg:hover path {
+  fill: #EF6C57;
+}
+.secondSection .rightAndLeft .right span {
+  color: rgba(57, 20, 0, 0.64);
+  font-family: "Epilogue", sans-serif;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+.secondSection .rightAndLeft .right .secondSvg {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.secondSection .rightAndLeft .right .secondSvg span {
+  color: #391400;
+  font-family: "Epilogue", sans-serif;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+}
+.secondSection .rightAndLeft .right .secondSvg svg:hover path {
+  fill: #fff;
+}
+.secondSection .rightAndLeft .right .secondSvg svg:hover rect {
+  fill: #EF6C57;
+}
+.secondSection .footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  padding-top: 15px;
+}
+.secondSection .footer span:nth-of-type(1) {
+  font-family: "Epilogue", sans-serif;
+  color: rgba(57, 20, 0, 0.64);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+}
+.secondSection .footer span:nth-of-type(2) {
+  font-family: "Epilogue", sans-serif;
+  color: #391400;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  cursor: pointer;
+}
+
+.thirdSection {
+  width: 100%;
+  height: 100vh;
+  background: #28293E;
+}
+.thirdSection .thirdHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 100px 10% 0 10%;
+  border: 1px solid green;
+}
+.thirdSection .thirdHeader .leftThirdHeader {
+  display: flex;
+  flex-direction: column;
+}
+.thirdSection .thirdHeader .leftThirdHeader span:nth-of-type(1) {
+  color: #EF6D58;
+  font-family: "Epilogue", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}

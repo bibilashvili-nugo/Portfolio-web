@@ -1,0 +1,389 @@
+@import "variables";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.firstSection {
+    width: 100%;
+    height: 100vh;
+    background: $backgroundColor;
+
+    .nav-bar {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        padding-top: 1rem;
+
+        .logo {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            max-width: 16%;
+            gap: 0.875rem;
+            flex-wrap: wrap;
+            cursor: pointer;
+
+            span {
+                font-family: 'Epilogue', sans-serif;
+                color: $whiteColor;
+                font-size: 1em;
+                font-style: normal;
+                font-weight: 700;
+                
+            }
+        }
+
+        nav {
+            max-width: 36%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            ul {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                gap: 3rem;
+                
+                li{
+                    list-style-type: none;
+                    color: $whiteColor;
+                    font-family: 'Epilogue', sans-serif;
+                    font-size: $normal-text-size;
+                    font-style: normal;
+                    font-weight: 400;
+                    text-transform: capitalize;
+                    cursor: pointer;
+                }
+            }
+        }
+        button {
+            color: $whiteColor;
+            width: 138px;
+            height: 48px;
+            border-radius: 6px;
+            background-color: transparent;
+            border: 1px solid rgba(255, 255, 255, 0.30);
+            text-transform: uppercase;
+            cursor: pointer;
+            text-align: center;
+            font-family: 'Epilogue', sans-serif;
+            font-size: $min-text-size;
+            font-style: normal;
+            font-weight: 900;
+            line-height: normal;
+        }
+
+        button:hover {
+            background-color: $backgroundColorPlus;
+            border: 1px solid #28293E;
+        }
+        
+    }
+    main {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+
+        .container-left {
+            display: flex;
+            flex-direction: column;
+            gap: $medium-text-size;
+            margin-top: 10%;
+
+            span:nth-of-type(1) {
+                color: $buttonColor;
+                font-size: $normal-text-size;
+                font-family: 'Epilogue', sans-serif;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 32px; 
+                letter-spacing: 3px;
+                text-transform: uppercase;
+            }
+
+            span:nth-of-type(2){
+                color: $whiteColor;
+                font-size: $huge-text-size;
+                font-style: normal;
+                font-weight: 800;
+                line-height: 80px; 
+                letter-spacing: -2px;   
+            }
+
+            button {
+                background-color: $buttonColor;
+                width: 154px;
+                height: 48px;
+                text-transform: uppercase;
+                color: $whiteColor;
+                text-align: center;
+                font-size: $min-text-size;
+                font-family: 'Epilogue', sans-serif;
+                font-style: normal;
+                font-weight: 900;
+                line-height: normal;
+                border: none;
+                border-radius: 6px;
+                cursor: pointer;
+            }
+            button:hover {
+                background-color: $buttonColorPlus;
+            }
+        }
+
+        .container-right {
+
+            img {
+                height: 80%;
+            }
+        }
+    }
+}
+
+.secondSection {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-color: $secondBackground;
+
+    .title {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+        padding-top: 30px;
+
+        span:nth-of-type(1) {
+            color: $buttonColor;
+            text-transform: uppercase;
+            font-size: $normal-text-size;
+            font-family: 'Epilogue', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 1em;
+            letter-spacing: 3px;
+        }
+
+        span:nth-of-type(2) {
+            color: $brown;
+            font-family: 'Epilogue', sans-serif;
+            font-size: 2rem;
+            font-style: normal;
+            font-weight: 800;
+            line-height: 3rem; 
+            letter-spacing: -1px;
+        }
+    }
+    
+    .rightAndLeft {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: auto;
+        padding-left: 6rem;
+
+        .left {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            width: 45%;
+            height: auto;
+            border: 1px solid $bordersecondcolor;
+            border-radius: 6px 0px 0px 6px;
+            padding: 3rem;
+            gap: 1rem;
+
+            .svg {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: $medium-text-size;
+
+                svg:hover circle {
+                    fill: $whiteColor;
+                }
+
+                svg:hover path {
+                    fill: $butcolor;
+                }
+
+                span {
+                    font-family: 'Epilogue', sans-serif;
+                    font-size: $normal-text-size;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 32px;
+                    color: $brown;
+                }
+            }
+            span {
+                color: $lightbrown;
+                font-family: 'Epilogue', sans-serif;
+                font-size: $min-text-size;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 1.5rem;
+            }
+
+            .svg1 {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+
+                span {
+                    color: $brown;
+                    font-family: 'Epilogue', sans-serif;
+                    font-size: $min-text-size;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 32px;
+                }
+
+                svg:hover path {
+                    fill: $whiteColor;
+                }
+
+                svg:hover rect {
+                    fill: $butcolor;
+                }
+            }
+        }
+
+        .right {
+            width: 45%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            height: auto;
+            border: 1px solid $bordersecondcolor;
+            border-radius: 6px 0px 0px 6px;
+            padding: 3rem;
+            gap: 1rem;
+
+            .firstsvg {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: $medium-text-size;
+
+                span {
+                    font-family: 'Epilogue', sans-serif;
+                    font-size: $normal-text-size;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 32px;
+                    color: $brown;
+                }
+
+                svg:hover circle {
+                    fill: $whiteColor;
+                }
+
+                svg:hover path {
+                    fill: $butcolor;
+                }
+            }
+
+            span {
+                color: $lightbrown;
+                font-family: 'Epilogue', sans-serif;
+                font-size: $min-text-size;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 1.5rem;
+            }
+
+            .secondSvg {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+
+                span {
+                    color: $brown;
+                    font-family: 'Epilogue', sans-serif;
+                    font-size: $min-text-size;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 32px;
+                }
+
+                svg:hover path {
+                    fill: $whiteColor;
+                }
+
+                svg:hover rect {
+                    fill: $butcolor;
+                }
+            }
+        }
+    }
+    .footer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+        padding-top: 15px;
+
+        span:nth-of-type(1) {
+            font-family: 'Epilogue', sans-serif;
+            color: $lightbrown;
+            font-size: $normal-text-size;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 32px; 
+        }
+
+        span:nth-of-type(2) {
+            font-family: 'Epilogue', sans-serif;
+            color: $brown;
+            font-size: $normal-text-size;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 32px; 
+            cursor: pointer;
+        }
+    }
+}
+
+.thirdSection {
+    width: 100%;
+    height: 100vh;
+    background: $backgroundColor;
+
+    .thirdHeader {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 100px 10% 0 10%;
+        border: 1px solid green;
+
+        .leftThirdHeader {
+            display: flex;
+            flex-direction: column;
+
+            span:nth-of-type(1) {
+                color: $buttonColor;
+                font-family: 'Epilogue', sans-serif;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 32px;
+                letter-spacing: 3px;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
