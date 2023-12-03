@@ -325,20 +325,95 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 100px 10% 0 10%;
-  border: 1px solid green;
+  padding: 100px 10% 4rem 10%;
+  align-items: center;
 }
 .thirdSection .thirdHeader .leftThirdHeader {
   display: flex;
   flex-direction: column;
+  gap: 1.25px;
 }
 .thirdSection .thirdHeader .leftThirdHeader span:nth-of-type(1) {
   color: #EF6D58;
   font-family: "Epilogue", sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 400;
   line-height: 32px;
   letter-spacing: 3px;
   text-transform: uppercase;
+}
+.thirdSection .thirdHeader .leftThirdHeader span:nth-of-type(2) {
+  color: #fff;
+  font-family: "Epilogue", sans-serif;
+  font-size: 3.5rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 64px; /* 114.286% */
+  letter-spacing: -1px;
+}
+.thirdSection .thirdHeader .rightThirdHeader {
+  height: auto;
+}
+.thirdSection .thirdHeader .rightThirdHeader button {
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: transparent;
+  padding: 18px 30px 16px 31px;
+}
+.thirdSection .thirdHeader .rightThirdHeader button span {
+  color: #FFF;
+  text-align: center;
+  font-family: "Epilogue", sans-serif;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.thirdSection .pictureWithGrid {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-between;
+}
+.thirdSection .pictureWithGrid div {
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+}
+.thirdSection .pictureWithGrid div img {
+  border: 1px solid #3A3C56;
+  padding: 20px;
+  width: 100%;
+  height: 576px;
+}
+.thirdSection .pictureWithGrid div button {
+  position: absolute;
+  top: 70%;
+  left: 10%;
+  padding: 5px 16px 1px 16px;
+  border-radius: 19px;
+  background-color: #fff;
+  border-color: transparent;
+}
+.thirdSection .pictureWithGrid div button span {
+  font-family: "Epilogue", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2rem;
+  color: #391400;
+}
+.thirdSection .pictureWithGrid div .c2sp1 {
+  position: absolute;
+  top: 80%;
+  left: 10%;
+  color: white;
+  font-family: "Epilogue", sans-serif;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 3rem;
 }
