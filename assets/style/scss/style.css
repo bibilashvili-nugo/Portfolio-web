@@ -32,7 +32,7 @@
 .firstSection .nav-bar .logo span {
   font-family: "Epilogue", sans-serif;
   color: #fff;
-  font-size: 1em;
+  font-size: 2rem;
   font-style: normal;
   font-weight: 700;
 }
@@ -422,4 +422,61 @@
   width: 100%;
   height: 100vh;
   background-color: #FDF0E9;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 10rem;
+}
+.fourth .fourthLeft {
+  width: auto;
+}
+.fourth .fourthRight {
+  display: flex;
+  flex-direction: column;
+  gap: 1.125rem;
+}
+.fourth .fourthRight span:nth-of-type(1) {
+  color: #EF6D58;
+  font-family: "Epilogue";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 2em;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+.fourth .fourthRight span:nth-of-type(2) {
+  color: #391400;
+  font-size: 3.5rem;
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 800;
+  line-height: 4rem;
+  letter-spacing: -1px;
+  margin-top: 0.125rem;
+}
+.fourth .fourthRight span:nth-of-type(3) {
+  color: #391400;
+  font-family: "Epilogue";
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2rem;
+  margin-top: 0.5rem;
+}
+.fourth .fourthRight span:nth-of-type(4) {
+  color: rgba(57, 20, 0, 0.64);
+  font-family: "Epilogue";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2em;
+}
+.fourth .fourthRight button {
+  width: 138px;
+  height: 48px;
+  margin-top: 1rem;
+  background-color: #fff;
+  border-radius: 10px;
+  border-color: transparent;
+  color: #391400;
 }
